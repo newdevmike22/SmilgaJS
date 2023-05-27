@@ -137,10 +137,46 @@ const car = {
     console.log("Drive me to the stop please.");
   },
   stop() {
-    console.log("I need to stop by my mother's house.");
+    //console.log("I need to stop by my mother's house.");
   },
 };
 
 console.log(car.make, car.colors[0]);
 car.drive();
 car.stop();
+
+/* CODING CHALLENGE SIETE 
+
+1. Create two objects "person1, "person2"
+2. Setup name, age (15 - 25), status ("resident", "tourist") keys
+3. Setup if else condition where age must be bigger than 18 and status must be equal to resident
+4. Test both objects
+*/
+
+const personOne = {
+  name: "Bubba Smith",
+  age: 25,
+  status: "tourist"
+}
+
+const personTwo = {
+  name: "Jamming Jane",
+  age: 21,
+  status: "resident"
+}
+
+if (personOne.name === "Joe Nameth" ) {
+  console.log("Joe Nameth is a Hall of Famer!");
+} else if (personOne.name === "Bubba Smith" && personOne.age > 18 && personOne.status !== "resident") {
+  console.log(`${personOne.name} is a great football player!`);
+  console.log(`${personOne.status}`);
+  console.log(`${personOne.age}`);
+}
+
+if (personTwo.name === "Bootsy Collins" ) {
+  console.log("I luv ya baby!");
+} else if (personTwo.name === "Jamming Jane" && personTwo.age > 18 && personTwo.status !== "tourist") {
+  console.log(`${personTwo.name} really knows how to jam on her bass!`);
+  console.log(`${personTwo.status}`);
+  console.log(`${personTwo.age}`);
+}

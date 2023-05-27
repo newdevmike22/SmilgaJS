@@ -217,22 +217,117 @@ person.greeting();
 
 // If Statements
 if (10 > 8) {
-  console.log("Yabba-Dabba-Doo!");
+  //console.log("Yabba-Dabba-Doo!");
 }
 
 const value = 16 > 30;
 
 if (value) {
-  console.log("Green Eggs and Ham.");
+  //console.log("Green Eggs and Ham.");
 } else {
-  console.log("Who let the dogs out?");
+  //console.log("Who let the dogs out?");
 }
 
 const age1 = 21;
 const age2 = 16;
 
 if (age2 >= age1) {
-  console.log("Welcome to Happy Times Niteclub");
+  //console.log("Welcome to Happy Times Niteclub");
 } else {
-  console.log("Sorry but you are not old enough to enter.");
+  //console.log("Sorry but you are not old enough to enter.");
+}
+
+const amount1 = 2000;
+const amount2 = 3000;
+const trip = 4000;
+
+//const valueOf = false;
+
+if (amount1 > amount2) {
+  //console.log("I'm going to Paris.");
+} else if (trip) {
+  //console.log("I'm going to Africa.");  
+} else {
+  console.log("I'm going to the Dominican Republic.");
+}
+
+//if (!valueOf) {
+  //console.log("It's snowing in Miami.");
+//}
+
+// Equality
+const value1 = 12;
+const value2 = "12";
+
+const valueOf = value1 == value2;
+const valueOf2 = value1 === value2;
+
+//console.log(valueOf);
+//console.log(valueOf2);
+
+// Logical Operators
+// (|| = OR), (&& = AND)
+
+const name2 = "Billy Bob";
+const age = 30;
+
+if (name2 === "Chuck" || age === 30) {
+  //console.log("Hola Amigo!");
+} else {
+  //console.log("Who the heck are you?");
+} 
+
+if (name2 === "Billy Bob" && age == 30) {
+  //console.log(`Happy Birthday ${name2}! How does it feel to be ${age}?`);
+} else {
+  //console.log("¿Quién eres?");
+}
+
+// Swith
+
+const dice = 7;
+
+switch (dice) {
+  case 1:
+    //console.log("You rolled a 1.");
+    break;
+  case 2:
+    //console.log("You rolled a 2.");
+    break;
+  case 3:
+    //console.log("You rolled a 3.");
+    break; 
+  default:
+    //console.log("You did not roll the dice.");
+}
+
+// WHILE LOOP
+
+let amount = 10;
+
+while (amount > 0) {
+  //console.log(`I have $${amount} and I'm going to the dollar store.`);
+  amount--;
+}
+
+// DO WHILE LOOP
+
+let cash = 0;
+
+do {
+  //console.log(`You currently have $${cash} to spend at the carnival.`);
+  cash++;
+}
+
+while (cash < 20);
+
+// FOR LOOP
+
+let i;
+for (i = 0; i < 5; i++) {
+  console.log(`And the magic number is : ${i}`);
+}
+
+for (let countdown = 10; countdown >= 0; countdown--) {
+  console.log(`Let the final countdown begin: ${countdown}`);
 }
