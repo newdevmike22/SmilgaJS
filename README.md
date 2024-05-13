@@ -1,0 +1,2 @@
+# SmilgaJS
+ Smilga Javascript Course
